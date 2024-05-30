@@ -1,14 +1,14 @@
 package temperoralcoupling.test;
 
-public class Salary implements Payment {
+public class DispathSalary implements Payment {
 	 public final int amount;
 	 public final Medium<MailInfo> medium;
 	
-	public Salary(int amount){
+	public DispathSalary(int amount){
 	  this(amount, new Email());
 	}
 	
-	public Salary(int amount, Medium<MailInfo> medium){
+	public DispathSalary(int amount, Medium<MailInfo> medium){
 		this.amount = amount;
 		this.medium = medium;
 	}
@@ -19,7 +19,7 @@ public class Salary implements Payment {
 	}
 	
 	public static void main(String args[]) {
-		Payment pymt = new Salary(10);
+		Payment pymt = new DispathSalary(10);
 		pymt.payto();
 	}
 }
