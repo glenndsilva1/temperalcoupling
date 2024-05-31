@@ -1,5 +1,6 @@
-package temperoralcoupling.test;
+package test;
 
-public interface Medium {
-      void send();
+public interface Medium <T>{
+      void send(T m);
 }
+
