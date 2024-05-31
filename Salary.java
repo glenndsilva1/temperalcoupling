@@ -14,12 +14,12 @@ public class Salary implements Payment {
 	}
 
 	@Override
-	public void payto() {
+	public void sendto() {
 		this.medium.send(this.amount+"");
 	}
 	
 	public static void main(String args[]) {
 		Payment pymt = new Salary(10);
-		pymt.payto();
+		pymt.sendto();
 	}
 }
