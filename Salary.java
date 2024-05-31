@@ -1,6 +1,5 @@
 package test;
 
-
 public class Salary implements Payment {
 	 public final int amount;
 	 public final Medium<String> medium;
