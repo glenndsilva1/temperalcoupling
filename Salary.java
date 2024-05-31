@@ -1,5 +1,6 @@
 package test;
 
+
 public class Salary implements Payment {
 	 public final int amount;
 	 public final Medium<String> medium;
@@ -15,7 +16,7 @@ public class Salary implements Payment {
 
 	@Override
 	public void payto() {
-		this.medium.send("10");
+		this.medium.send(this.amount+"");
 	}
 	
 	public static void main(String args[]) {
