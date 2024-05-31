@@ -1,5 +1,5 @@
 package test;
 
-public interface Payment{
-	void payto();
+public interface Payment {
+	void sendto();
 }
