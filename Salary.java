@@ -1,22 +1,21 @@
-package temperoralcoupling.test;
-
+package test;
 
 public class Salary implements Payment {
 	 public final int amount;
-	 public final Medium medium;
+	 public final Medium<String> medium;
 	 
 	public Salary(int amount){
-	  this(amount, new Email(new MailInfo()));
+	  this(amount, new Email(new MailInfo("glenndsilva@gmail.com","ccavenue.info","Test","Test")));
 	}
 	
-	public Salary(int amount, Medium medium){
+	public Salary(int amount, Medium<String> medium){
 		this.amount = amount;
 		this.medium = medium;
 	}
 
 	@Override
 	public void payto() {
-		this.medium.send();
+		this.medium.send("10");
 	}
 	
 	public static void main(String args[]) {
